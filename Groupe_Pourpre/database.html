@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/learn.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Back-End Database</title>
+    <script src="scripts/jQuery.js"></script>
+  </head>
+  <body>
+      <header class="container--display-flex container--justify-end container--flex-wrap">
+          <nav class="navbar navbar-expand-lg navbar-dark content--align-content flex1">
+              <a class="navbar-brand" href="http://www.passerelle-numerique.fr/" target="blank">
+                  <img class="header__logo" src="css/img/logo.png" alt="Logo SimplonMars">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+              <div class="menu collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                      <a class="ici" href="index.html">ACCUEIL</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="" href="linux.html">LINUX</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="" href="database.html">DATABASE</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="" href="framework.html">FRAMEWORK</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="" href="contact.html">CONTACT</a>
+                  </li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+    <section class="intro__text">
+      <i class="fa fa-5x fa-database" aria-hidden="true"></i>
+      <h1>Database</h1>
+      <p>
+        Une base de données est une collection de données organisées de
+        façon à être facilement accessibles, administrées et mises à jour.
+        Les bases de données peuvent être classées par le type de contenu
+        qu’elles renferment : bibliographique, full text, images ou des
+        nombres.
+      </p>
+
+      <p>
+        Le terme Database est apparu en 1964, s'en suivirent de nombreux
+        modèles de bases de données expérimentales et factuelles,
+        d'abord utilisées par l'armée et les spécialistes du sujet.
+        Apparues dans les années 1990, les bases de données
+        objet-relationnel permettent d'organiser les données sous la
+        forme de tables définies de façon formelle, à partir desquelles
+        les données sont accessibles et assemblées sans avoir à
+        réorganiser les tables de la base de données.
+      </p>
+
+      <p>
+        Nous utiliserons lors de nos cours le système de gestion de bases
+        de données relationnelles (SGBDR) MySQL.
+        Pour nous familiariser avec ce système, rien de mieux que la
+        pratique !
+      </p><br>
+    </section>
+    <div class="container--display-flex container--justify-start">
+      <!--<aside class="menu--left">
+        <ul>
+          <li>
+            <h2>Base de Données</h2>
+            <ul>
+              <li><a href=""><span>Cours 1</span></a></li>
+              <li><a href=""><span>Cours 2</span></a></li>
+              <li><a href=""><span>Cours 3</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside><-->
+      <section class="content--right">
+        <span>
+          Installer un émulateur de base de données en local, attention, lors de
+          l'installation des différents paquets, il vous sera demandé d'entrer des
+          mots de passes qui vous permetront par la suite d'accèder à vos bases de données.
+        </span>
+        <br><br>
+        <span>Ouvrir un Terminal et entrer les commandes suivantes :</span>
+
+        <p>Installer les paquets Apache 2 nécéssaires à mysql</p>
+        <code>sudo apt-get install apache2</code>
+
+        <p>Installer les paquets mysql client</p>
+        <code>sudo apt-get install mysql-client</code>
+
+        <p>Installer les paquets mysql server</p>
+        <code>sudo apt-get install mysql-server</code>
+
+        <p>Installer les paquets de phpmyadmin</p>
+        <code>sudo apt-get install phpmyadmin</code>
+        <br><br>
+        <p>
+          Une fois ces commandes exécutées, tous les paquets nécéssaires sont
+          maintenant installés et vous pouvez commencer à intéragir avec la BDD
+        </p>
+
+        <p>Tout d'abbord connectez-vous à mysql via la commande suivante :</p>
+        <code>mysql -u root -p</code>
+
+        <p>
+          Il vous sera demandé un mot de passe, c'est celui que vous avez saisi lors de
+          l'installation des paquets précédents, tapez-le sur votre clavier et appuyez
+          sur Entrée. Vous êtes maintenant connectés à mysql et pouvez interagir avec
+          vos bases de données, voici donc quelques commandes.
+        </p>
+
+        <p>Créer une Base de Données</p>
+        <code><em class="command">CREATE DATABASE</em> dbName CHARACTER SET UTF8;</code>
+
+        <p>Supprimer une Base de Données</p>
+        <code><em class="command">DROP DATABASE</em> dbName;</code>
+
+        <p>Lister les Bases de Données</p>
+        <code><em class="command">SHOW DATABASES</em>;</code>
+
+        <p>Spécifier la Base de Données avec laquelle interagir</p>
+        <code><em class="command">USE</em> dbName;</code>
+
+        <p>Créer une Table dans une Base de Données</p>
+        <code><em class="command">CREATE TABLE</em> tableName;</code>
+
+        <p>Afficher la structure d'une table</p>
+        <code><em class="command">DESCRIBE</em> tableName;</code>
+
+        <p>Supprimer une Table</p>
+        <code><em class="command">DROP TABLE</em> tableName;</code>
+
+        <p>Renommer une Table</p>
+        <code><em class="command">ALTER TABLE</em> tableName <em class="command">RENAME AS</em> newTableName;</code>
+
+        <p>Vider une Table</p>
+        <code><em class="command">TRUNCATE</em> tableName;</code>
+
+
+
+
+
+
+      </section>
+    </div>
+    <footer>
+      <span>Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
+    </footer>
+
+    <script type="text/javascript" src="scripts/bootstrap.bundle.js">
+    </script>
+  </body>
+</html>
