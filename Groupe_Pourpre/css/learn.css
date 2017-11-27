@@ -6,65 +6,6 @@ Rose            #AC2963
 Rose Clair      #F04152
 */
 
-@font-face {
-  font-family: RobotoSlab-Light;
-  src: url("font/RobotoSlab-Light.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: Rubik-Medium;
-  src: url("font/Rubik-Medium.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: Rubik-Regular;
-  src: url('font/Rubik-Regular.ttf');
-  font-weight: normal;
-}
-
-/*!----- Flex -----!*/
-
-.container--display-flex {
-  display: flex;
-}
-.container--flex-wrap {
-  flex-wrap: wrap;
-}
-.container--justify-end {
-  justify-content: flex-end;
-}
-.container--justify-start {
-  justify-content: flex-start;
-}
-.content--align-content {
-  align-content: flex-start;
-}
-.flex1 {
-  flex:1;
-}
-/*----- Header -----*/
-
-header {
-  background-color: white;
-  text-align: left;
-  border-bottom: solid 10px #204152;
-  background-color: #212428;
-}
-img.header__logo {
-  width: 100px;
-  background-color: white;
-  border-radius: 100px;
-  padding: 0px;
-  margin: 11px;
-}
-nav {
-  margin-left: 20px;
-}
-nav ul li {
-  margin-top: 50px;
-  margin-left: 20px;
-
-}
 nav ul li a {
   color: #FFF;
   font-family: 'Rubik-Medium';
@@ -154,26 +95,26 @@ aside span {
 
 /* Contenu Central */
 
-section.content--right {
+section.contenu--right {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 2%;
   margin-bottom: 10%;
 }
-section.content--right span {
+section.contenu--right span {
   font-family: 'RobotoSlab-Light', sans-serif;
   font-weight: bold;
   font-size: 20px;
 
 }
-section.content--right p {
+section.contenu--right p {
   margin-top: 25px;
   margin-bottom: 15px;
   font-family: 'RobotoSlab-Light';
   font-weight: bold;
 
 }
-section.content--right code {
+section.contenu--right code {
   background-color: #212428;
   border-radius: 2px;
   color: white;
@@ -182,10 +123,10 @@ section.content--right code {
   font-family: 'RobotoSlab-Light', sans-serif;
 
 }
-section.content--right code em.command {
+section.contenu--right code em.command {
   color: #f441eb;
 }
-section.content--right code em.attribute {
+section.contenu--right code em.attribute {
   color: #92f442;
 }
 /*    Footer     */

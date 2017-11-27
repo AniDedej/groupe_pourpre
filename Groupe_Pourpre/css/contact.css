@@ -24,16 +24,16 @@ Rose Clair      #F04152
 
 /*!----- Flex -----!*/
 
-.container--display-flex {
+.contenu--display-flex {
   display: flex;
 }
-.container--flex-wrap {
+.contenu--flex-wrap {
   flex-wrap: wrap;
 }
-.container--justify-end {
+.contenu--justify-end {
   justify-content: flex-end;
 }
-.container--justify-start {
+.contenu--justify-start {
   justify-content: flex-start;
 }
 .content--align-content {
@@ -42,7 +42,7 @@ Rose Clair      #F04152
 .flex1 {
   flex:1;
 }
-.container--direction-row {
+.contenu--direction-row {
   flex-direction: row;
 }
 
@@ -117,7 +117,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #346699;
 }
-.container {
+.contenu {
   background-color: #D4D5D6;
   margin-top: 5%;
   margin-bottom:50px;
