@@ -248,7 +248,7 @@ section.contenu--right code em.attribute {
 /*    Footer     */
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 50px;
