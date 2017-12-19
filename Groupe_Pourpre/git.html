@@ -50,7 +50,7 @@
             </div>
         </nav>
     </header>
-    <section class="intro__text">
+    <section class="intro__text col-12 p-3">
       <i class="fa fa-5x fa-git" aria-hidden="true"></i>
       <h1>Git</h1>
       <p>
@@ -62,10 +62,9 @@
     <div class="container">
     <div class="row justify-content-center">
 
-      <section class="col-lg-6 col-md-6 col-sm-12 p-3 ">
+      <section class="contenu--right col-lg-6 col-md-6 col-sm-12 p-3 ">
 
-      <section class="contenu--right">
-    
+
 
       <code>sudo apt-get install git</code>
 
@@ -83,6 +82,7 @@
 
 
       <p>Montre l'historique des versions pour la branche courante</p>
+      <code>git log</code>
 
       <p>Placer de nouveaux fichiers sous suivi de version</p>
       <code>git add</code>
@@ -95,6 +95,12 @@
 
       <p>Passer sur la branche "Master"</p>
       <code>git checkout master</code>
+
+      <p>créer une nouvelle branche </p>
+      <code>git branch nomDeLaBranche</code>
+
+      <p>Lister les branches</p>
+      <code>git branch -a</code>
 
       <p>Après un commit permet de nommer notre version en "v1"</p>
       <code>git tag v1</code>
@@ -119,6 +125,9 @@
 
       <p>Récupèrer la version "origin" sur la branche "master"</p>
       <code>git fetch origin master</code>
+
+      <p>Fusionner la branche de dépôt dans la branche locale courante</p>
+      <code>git merge [nom de dépôt]/[branche]</code>
 
 
 
