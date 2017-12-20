@@ -18,9 +18,20 @@ Rose Clair      #F04152
 }
 @font-face {
   font-family: Rubik-Regular;
-  src: url('font/Rubik-Regular.ttf');
+  src: url("font/Rubik-Regular.ttf");
   font-weight: normal;
 }
+
+@media screen and (max-width: 640px) {
+  footer {
+    font-size:13px;
+  }
+  .test{
+    display: none;
+  }
+}
+
+
 
 /*!----- Flex -----!*/
 
@@ -49,6 +60,7 @@ header {
   text-align: left;
   border-bottom: solid 10px #204152;
   background-color: #212428;
+  width: 100%;
 }
 img.header__logo {
   width: 100px;
@@ -98,7 +110,13 @@ nav ul li:hover:after {
 body, html {
   width: 100%;
   height: 100%;
+
 }
+
+h1 {
+  font-family: 'RobotoSlab-Light', sans-serif;
+}
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -162,9 +180,11 @@ section.intro__text h1 {
 }
 section.intro__text p {
   margin-left: 20px;
+  margin-top: 5%;
   padding-top: 20px;
   font-family: 'Rubik-Regular';
   color: #212428;
+
 }
 section.intro__text li {
   margin-left: 30px;
@@ -211,8 +231,7 @@ section.body__menu p {
   line-height: 120%;
 }
 section.contenu--right {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 1%;
   margin-top: 2%;
   margin-bottom: 10%;
 }
@@ -263,4 +282,31 @@ footer span {
   color: white;
   text-align: center;
   margin-top: 1%;
+}
+
+section.content--right code {
+    background-color: #212428;
+    border-radius: 2px;
+    color: white;
+    margin-top: 15px;
+    padding: 4px;
+    font-family: 'RobotoSlab-Light', sans-serif;
+}
+
+section.content--right code em.command {
+    color: #f441eb;
+}
+
+section.content--right {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+
+}
+
+section.content--right span {
+    font-family: 'RobotoSlab-Light', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
