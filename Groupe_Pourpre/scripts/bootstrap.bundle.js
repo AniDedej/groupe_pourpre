@@ -15,6 +15,7 @@ $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
  * --------------------------------------------------------------------------
  */
 
+
 var Util = function () {
   /**
    * ------------------------------------------------------------------------
@@ -30,6 +31,38 @@ var Util = function () {
     transition: 'transitionend' // shoutout AngusCroll (https://goo.gl/pxwQGp)
 
   };
+  /* Fonctions du formulaire*/
+  /*
+  function verifForm ( )
+  {
+      if ( document.formulaire.firstName.value == "" )
+      {
+          alert ( "Veuillez entrer votre prénom !" );
+          valid = false;
+  return valid;
+      }
+  
+      if ( document.formulaire.lastName.value == "" )
+      {
+          alert ( "Veuillez entrer votre nom !" );
+          valid = false;
+  return valid;
+      }
+  
+      if ( document.formulaire.eletronic_address.value == "" )
+      {
+          alert ( "Veuillez entrer votre courriel !" );
+          valid = false;
+  return valid;
+      }
+  
+      if ( document.formulaire.subject.value == "" )
+      {
+          alert ( "Veuillez entrer votre numéro de téléphone !" );
+          valid = false;
+  return valid;
+      }
+  }*/
 
   function toType(obj) {
     return {}.toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();

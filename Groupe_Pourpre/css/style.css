@@ -99,7 +99,8 @@ body, html {
   width: 100%;
   height: 100%;
 }
-input[type=text], select, textarea {
+
+input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -117,23 +118,26 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+
 input[type=submit]:hover {
   background-color: #346699;
 }
+/* Classe juste for the page of contact ? */
 .contenu {
   background-color: #D4D5D6;
-  margin-top: 5%;
-  margin-bottom:50px;
 }
+/* Replaced by Boostrap classes
 .formuler {
   padding: 20px;
   font-family: 'Rubik-Regular';
   flex: 1;
 }
+*/
 .map {
-  flex: 1;
-  font-family: 'Rubik-Regular';
-  padding: 20px;
+  padding: 5%;  
+}
+.button{
+  text-align: center;
 }
 section.intro__text {
   width: 100%;
@@ -145,6 +149,9 @@ section.intro__text img {
   width: 200px;
   float: left;
 
+}
+.message_contact{
+  font-size: 25px;
 }
 section.intro__text i {
   color:#212428;
