@@ -33,7 +33,7 @@
                       <a class="" href="linux.html">LINUX</a>
                   </li>
                   <li class="nav-item">
-                    <a class="" href="git2.html">GIT</a>
+                    <a class="" href="git.html">GIT</a>
                 </li>
                   <li class="nav-item">
                       <a class="" href="database.html">BASE DE DONNÉES</a>
@@ -48,24 +48,28 @@
               </div>
           </nav>
       </header>
-    <section class="intro__text">
+      <div class="row">
+    <section class="intro__text col-sm-12 col-12">
+      <div class="test">
       <i class="fa fa-5x fa-database" aria-hidden="true"></i>
+    </div>
+      <article class = "col-12">
       <h1>Base de données</h1>
       <p>
         Une base de données (BDD) est une collection de données organisées de
         façon à être facilement accessibles, administrées et mises à jour.
-        our accéder ou modifier les données, c’est nécessaire aussi d’utiliser un 
-        système qui va permettre de gérer cette base et un langage pour transmettre des instructions à la BDD. 
+        our accéder ou modifier les données, c’est nécessaire aussi d’utiliser un
+        système qui va permettre de gérer cette base et un langage pour transmettre des instructions à la BDD.
       </p>
 
       <p>
-        Le système de gestion de base de données (SGBD) est  un ensemble de logiciels permettant de manipuler les 
-        données d'une BDD, donnant une vue synthétique sur le contenu et permettant à plusieurs utilisateurs de 
-        manipuler la BDD simultanément. La majorité des SGBD sont basés sur  le modèle client – serveur. Dans 
-        ce modèle, le client est le logiciel utilisé dans les requêtes des BDD et les serveurs, ordinateurs 
-        abritent le logiciel serveur, qui attendent les requêtes des clients et  les répondent. Dans le cas 
-        de l’installation d’un SGBD basé sur ce modèle, vous installez le client et le serveur. Pour être 
-        capable se communiquer avec le logiciel client, il faut utiliser une langage de programmation que, 
+        Le système de gestion de base de données (SGBD) est  un ensemble de logiciels permettant de manipuler les
+        données d'une BDD, donnant une vue synthétique sur le contenu et permettant à plusieurs utilisateurs de
+        manipuler la BDD simultanément. La majorité des SGBD sont basés sur  le modèle client – serveur. Dans
+        ce modèle, le client est le logiciel utilisé dans les requêtes des BDD et les serveurs, ordinateurs
+        abritent le logiciel serveur, qui attendent les requêtes des clients et  les répondent. Dans le cas
+        de l’installation d’un SGBD basé sur ce modèle, vous installez le client et le serveur. Pour être
+        capable se communiquer avec le logiciel client, il faut utiliser une langage de programmation que,
         dans le cas de MySQL est le SQL.<br>
         Les SGBD plus connus sont :
         <ul>
@@ -86,6 +90,7 @@
           </li>
         </ul>
       </p>
+    </article>
 
       <p>
         Nous utiliserons lors de nos cours le système de gestion de bases
@@ -95,7 +100,7 @@
       </p><br>
     </section>
     <div class="contenu--display-flex contenu--justify-start">
-      <section class="content--right">
+      <section class="contenu--right col-12 col-lg-10 ">
         <span>
           Installer un émulateur de base de données en local, attention, lors de
           l'installation des différents paquets, il vous sera demandé d'entrer des
@@ -104,25 +109,25 @@
         <br><br>
         <span>Ouvrir un Terminal et entrer les commandes suivantes :</span>
 
-        <p>Installer les paquets Apache 2 nécéssaires à mysql</p>
-        <code>sudo apt-get install apache2</code>
+        <p>Installer les paquets Apache 2 nécéssaires à mysql<br>
+        <code>sudo apt-get install apache2</code></p>
 
-        <p>Installer les paquets mysql client</p>
-        <code>sudo apt-get install mysql-client</code>
+        <p>Installer les paquets mysql client<br>
+        <code>sudo apt-get install mysql-client</code></p>
 
-        <p>Installer les paquets mysql server</p>
-        <code>sudo apt-get install mysql-server</code>
+        <p>Installer les paquets mysql server<br>
+        <code>sudo apt-get install mysql-server</code></p>
 
-        <p>Installer les paquets de phpmyadmin</p>
-        <code>sudo apt-get install phpmyadmin</code>
-        <br><br>
+        <p>Installer les paquets de phpmyadmin<br>
+        <code>sudo apt-get install phpmyadmin</code></p>
+
         <p>
           Une fois ces commandes exécutées, tous les paquets nécéssaires sont
           maintenant installés et vous pouvez commencer à intéragir avec la BDD
         </p>
 
-        <p>Tout d'abbord connectez-vous à mysql via la commande suivante :</p>
-        <code>mysql -u root -p</code>
+        <p>ici, nous allons vous decrire les commande de base necessaire a connaitre pour pouvoir utiliser MySql.<br> Tout d'abbord connectez-vous à mysql via la commande suivante :<br>
+        <code>mysql -u root -p</code></p>
 
         <p>
           Il vous sera demandé un mot de passe, c'est celui que vous avez saisi lors de
@@ -131,32 +136,60 @@
           vos bases de données, voici donc quelques commandes.
         </p>
 
-        <p>Créer une Base de Données</p>
-        <code><em class="command">CREATE DATABASE</em> dbName CHARACTER SET UTF8;</code>
+        <p>Créer une Base de Données<br>
+        <code><em class="command">CREATE DATABASE</em> dbName CHARACTER SET UTF8;</code></p>
 
-        <p>Supprimer une Base de Données</p>
-        <code><em class="command">DROP DATABASE</em> dbName;</code>
+        <p>Supprimer une Base de Données<br>
+        <code><em class="command">DROP DATABASE</em> dbName;</code></p>
 
-        <p>Lister les Bases de Données</p>
-        <code><em class="command">SHOW DATABASES</em>;</code>
+        <p>Lister les Bases de Données<br>
+        <code><em class="command">SHOW DATABASES</em>;</code></p>
 
-        <p>Spécifier la Base de Données avec laquelle interagir</p>
-        <code><em class="command">USE</em> dbName;</code>
+        <p>Spécifier la Base de Données avec laquelle interagir<br>
+        <code><em class="command">USE</em> dbName;</code></p>
 
-        <p>Créer une Table dans une Base de Données</p>
-        <code><em class="command">CREATE TABLE</em> tableName;</code>
+        <p>Créer une Table dans une Base de Données<br>
+        <code><em class="command">CREATE TABLE</em> tableName;</code></p>
 
-        <p>Afficher la structure d'une table</p>
-        <code><em class="command">DESCRIBE</em> tableName;</code>
+        <p>Afficher la structure d'une table<br>
+        <code><em class="command">DESCRIBE</em> tableName;</code></p>
 
-        <p>Supprimer une Table</p>
-        <code><em class="command">DROP TABLE</em> tableName;</code>
+        <p>Supprimer une Table<br>
+        <code><em class="command">DROP TABLE</em> tableName;</code></p>
 
-        <p>Renommer une Table</p>
-        <code><em class="command">ALTER TABLE</em> tableName <em class="command">RENAME AS</em> newTableName;</code>
+        <p>Renommer une Table<br>
+        <code><em class="command">ALTER TABLE</em> tableName <em class="command">RENAME AS</em> newTableName;</code></p>
+        <p>Vider une Table<br>
+        <code><em class="command">TRUNCATE</em> tableName;</code></p>
 
-        <p>Vider une Table</p>
-        <code><em class="command">TRUNCATE</em> tableName;</code>
+    <span>Nous allons maintenant voir comment interagir avec la base de donnée que vous avez creer. Nous allons,
+      pour cela utiliser la commande select  qui retourne des enregistrements dans un tableau de
+         résultat. Cette commande peut sélectionner une ou plusieurs colonnes d’une table.</span>
+
+         <p>Commande de base:<br>
+         <code><em class="command">SELECT</em> nomColonne <em class="command">FROM</em> nomDeTable;</code><br>
+         La commande <code><em class="command">SELECT</em></code> permet de selectionner une entrer de la table, et <code><em class="command">FROM</em></code>
+          de stipuler a quelle table elle apartient</p>
+
+          <p>Pour selectionner plusieur colonnes, il suffit de separé le nom des colonne par une virgule:<br>
+            <code><em class="command">SELECT</em> nomColonne , nomColonne2 <em class="command">FROM</em> nomDeTable;</code><br>
+
+            <p> Pour selectionner toutes les colonnes, le symbole * sera utiliser:<br>
+              <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable;</code><br>
+
+              <p> Un ordre doit etre respecter dans l'utilisation des comandes, nous allons utiliser une commande qui possede presque toutes celles possible
+                en tant qu'aide memoire:<br>
+                <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable <em class="command">WHERE</em> condition <em class="command"> GROUP BY</em> expression</code></p>
+
+                <p>La commande WHERE dans une requête SQL permet d’extraire les lignes d’une base de données
+qui respectent une condition. Cela permet d’obtenir uniquement les informations désirées. par exemple, si vous voulez afficher le nombre de personne qui habite Marseille<br>
+<code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable <em class="command">WHERE</em> ville = Marseille </code></p>
+
+
+
+
+
+
 
 
 
@@ -166,8 +199,9 @@
       </section>
     </div>
     <footer>
-      <span>Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
+      <span class="col-12">Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
     </footer>
+  </div>
 
     <script type="text/javascript" src="scripts/bootstrap.bundle.js">
     </script>
