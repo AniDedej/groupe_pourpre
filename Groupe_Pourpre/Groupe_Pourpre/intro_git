@@ -1,0 +1,3 @@
+En l’espace de quelque années, Git s’est imposé comme le standard pour la gestion des versions logicielles. Le projet Git a été initié en 2005 par Linus Torvald pour gérer les sources du noyau Linux. Git repose sur une architecture distribuée : chaque copie locale d’un dépôt contient l’intégralité de l’historique du projet.
+
+Un dépôt (repository en anglais) se matérialise sous la forme d’un répertoire caché nommé .git dans lequel Git stocke l’historique du projet.
