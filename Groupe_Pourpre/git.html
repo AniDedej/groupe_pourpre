@@ -65,10 +65,17 @@
             <div id="menu-overlay"></div>
         </nav>
     </header>
+<<<<<<< HEAD
     <section class="intro__text">
         <i class="fa fa-5x fa-git" aria-hidden="true"></i>
         <h1>Git</h1>
         <p>
+=======
+    <section class="intro__text col-12 p-3">
+      <i class="fa fa-5x fa-git" aria-hidden="true"></i>
+      <h1>Git</h1>
+      <p>
+>>>>>>> 6a3d3cf0b3a6036b47fcad931280a6f691f9775f
 
             Git, un outil de gestion des versions de projet décentralisé. C'est un logiciel open source qui facilite le coworking sur
             un projet en gardant les traces de chaque version et les modifications apportés par les auteurs
@@ -76,12 +83,38 @@
         </p>
     </section>
     <div class="container">
+<<<<<<< HEAD
         <div class="row justify-content-center">
             <section class="col-lg-6 col-md-6 col-sm-12 p-3 ">
                 <section class="contenu--right">
                     <code>sudo apt-get install git</code>
 
                     <p>Une fois installé, vous pouvez commencer à interagir avec lui.</p>
+=======
+    <div class="row justify-content-center">
+
+      <section class="contenu--right col-lg-6 col-md-6 col-sm-12 p-3 ">
+
+
+
+      <code>sudo apt-get install git</code>
+
+      <p>Une fois installé, vous pouvez commencer à interagir avec lui.</p>
+
+      <p>Créer un dépot git dans le workspace (à spécifier)</p>
+      <code>git init {name}</code>
+
+      <p>Créer un dépot git dans srv (à spécifier)</p>
+      <code>git init --bare {name}</code>
+
+      <p>Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</p>
+      <code>git status</code>
+
+
+
+      <p>Montre l'historique des versions pour la branche courante</p>
+      <code>git log</code>
+>>>>>>> 6a3d3cf0b3a6036b47fcad931280a6f691f9775f
 
                     <p>Créer un dépot git dans le workspace (à spécifier)</p>
                     <code>git init {name}</code>
@@ -93,6 +126,17 @@
                     <code>git status</code>
 
 
+<<<<<<< HEAD
+=======
+      <p>créer une nouvelle branche </p>
+      <code>git branch nomDeLaBranche</code>
+
+      <p>Lister les branches</p>
+      <code>git branch -a</code>
+
+      <p>Après un commit permet de nommer notre version en "v1"</p>
+      <code>git tag v1</code>
+>>>>>>> 6a3d3cf0b3a6036b47fcad931280a6f691f9775f
 
                     <p>Montre l'historique des versions pour la branche courante</p>
 
@@ -114,8 +158,14 @@
                     <p>Supprimer le tag "v1" mais conserve la version</p>
                     <code>git tag -d v1</code>
 
+<<<<<<< HEAD
                     <p>Se connecter au dépôt git </p>
                     <code>git remote add origin /srv/passerelle.git</code>
+=======
+      <p>Fusionner la branche de dépôt dans la branche locale courante</p>
+      <code>git merge [nom de dépôt]/[branche]</code>
+
+>>>>>>> 6a3d3cf0b3a6036b47fcad931280a6f691f9775f
 
                     <p>Afficher les connexions</p>
                     <code>git remote</code>
