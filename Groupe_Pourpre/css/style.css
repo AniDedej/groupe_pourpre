@@ -140,13 +140,12 @@ input[type=submit]:hover {
 }
 .contenu {
   background-color: #D4D5D6;
-  margin-top: 5%;
-  margin-bottom:50px;
 }
-.formuler {
-  padding: 20px;
-  font-family: 'Rubik-Regular';
-  flex: 1;
+.button {
+  text-align: center;
+}
+.message_contact {
+  font-size: 25px;
 }
 .map {
   flex: 1;
