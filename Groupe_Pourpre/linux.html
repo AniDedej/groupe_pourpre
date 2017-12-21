@@ -66,75 +66,103 @@
     </nav>
   </header>
   <section class="intro__text">
-    <i class="fa fa-5x fa-linux" aria-hidden="true"></i>
-    <h1>Linux</h1>
-    <p>
-      Un système d'exploitation est un ensemble de logiciels de base que nous permet d'utiliser un ordinateur. Il est nécessaire,
-      par exemple, pour la communication entre les composants matériels (carte réseau, processeur, etc) et l'utilisation
-      de periferiques (souris et clavier). Linux est un système d'exploitation, au même titre que Windows et MAC OS. Il a
-      été créé en 1991 à partir de la fusion des outils GNU, développés par l'américan Richard Stallman, et le noyau Linux,
-      développé par le finlandais Linus Torvalds.
-    </p>
+    
+      <i class="fa fa-5x fa-linux" aria-hidden="true"></i>
+      <h1>Linux</h1>
+      <p>
+        Un système d'exploitation est un ensemble de logiciels de base que nous permet d'utiliser un ordinateur. Il est nécessaire,
+        par exemple, pour la communication entre les composants matériels (carte réseau, processeur, etc) et l'utilisation
+        de periferiques (souris et clavier). Linux est un système d'exploitation, au même titre que Windows et MAC OS. Il
+        a été créé en 1991 à partir de la fusion des outils GNU, développés par l'américan Richard Stallman, et le noyau
+        Linux, développé par le finlandais Linus Torvalds.
+      </p>
 
-    <p>
-      Ce système possède de nombreux avantages: il est stable, multi-utilisateur, gratuit, ouvert et ilimité. Linux possède un
-      grand nombre de distributions ("versions") adaptées au bonheur de tout un chacun. Les versions les plus stables sont
-      les preferés des professionnels (Debian et Red Hat). Les distributions adressés aux novices sont Ubuntu, Fedora et
-      Mandriva. Elles ont la particularité d'intégrer par défault une interface graphique utilisateur (GUI, du anglais graphic
-      user interface) et la procédure d'installation est simplifié. Ces deux caracteristiques ont contribué à la popularisation
-      des distributions Linux. Nous utilisons UBUNTU lors de nos cours et travaux.
-    </p>
+      <p>
+        Ce système possède de nombreux avantages: il est stable, multi-utilisateur, gratuit, ouvert et ilimité. Linux possède un
+        grand nombre de distributions ("versions") adaptées au bonheur de tout un chacun. Les versions les plus stables sont
+        les preferés des professionnels (Debian et Red Hat). Les distributions adressés aux novices sont Ubuntu, Fedora et
+        Mandriva. Elles ont la particularité d'intégrer par défault une interface graphique utilisateur (GUI, du anglais
+        graphic user interface) et la procédure d'installation est simplifié. Ces deux caracteristiques ont contribué à la
+        popularisation des distributions Linux. Nous utilisons UBUNTU lors de nos cours et travaux.
+      </p>
   </section>
   <div class="contenu--display-flex contenu--justify-start">
     <section class="contenu--right">
       <span>Si vous aimez taper des commandes dans un terminal, en voici quelques unes à essayer !</span>
 
       <p>cd : Naviguer dans l'arborescence système</p>
-      <code><em class="command">cd</em> /home/desktop/</code>
+      <code>
+        <em class="command">cd</em> /home/desktop/</code>
 
       <p>mkdir : Créer un dossier.</p>
-      <code><em class="command">mkdir</em> /home/desktop/monNouveauDossier</code>
+      <code>
+        <em class="command">mkdir</em> /home/desktop/monNouveauDossier</code>
 
       <p>touch/gedit/nano : Editer un fichier texte.</p>
-      <code><em class="command">touch</em> /home/desktop/monDossier/monFichier</code>
+      <code>
+        <em class="command">touch</em> /home/desktop/monDossier/monFichier</code>
 
       <p>echo : Remplacer le contenu d'un fichier texte</p>
-      <code><em class="command">echo</em> /home/desktop/monDossier/monFichier "Hello World"</code>
+      <code>
+        <em class="command">echo</em> /home/desktop/monDossier/monFichier "Hello World"</code>
 
       <p>echo >> : Rajouter du contenu à un fichier texte</p>
-      <code><em class="command">echo</em> <em class="attribute">>></em> /home/desktop/monDossier/monFichier "Ligne 2"</code>
+      <code>
+        <em class="command">echo</em>
+        <em class="attribute">>></em> /home/desktop/monDossier/monFichier "Ligne 2"</code>
 
       <p>cat : Afficher le contenu d'un fichier texte</p>
-      <code><em class="command">cat</em> /home/monDossier/monFichier</code>
+      <code>
+        <em class="command">cat</em> /home/monDossier/monFichier</code>
 
       <p>mv : Déplacer ou renommer des fichiers ou répertoires.</p>
-      <code><em class="command">mv</em> /home/desktop/monDossier/monFichier /home/desktop/monNouveauDossier</code>
+      <code>
+        <em class="command">mv</em> /home/desktop/monDossier/monFichier /home/desktop/monNouveauDossier</code>
 
       <p>cp : Copier Coller des fichiers ou répertoires.</p>
-      <code><em class="command">cp</em> /home/desktop/monNouveauDossier/monFichier /home/desktop/monDossier</code>
+      <code>
+        <em class="command">cp</em> /home/desktop/monNouveauDossier/monFichier /home/desktop/monDossier</code>
 
       <p>ls : Afficher les dossiers/fichiers dans le répertoire actuel</p>
-      <code><em class="command">ls</em> /home/desktop/monNouveauDossier</code>
+      <code>
+        <em class="command">ls</em> /home/desktop/monNouveauDossier</code>
 
       <p>ls -a : Afficher les dossier/fichiers cachés dans le répertoire actuel</p>
-      <code><em class="command">ls</em> <em class="attribute">-a</em> /srv</code>
+      <code>
+        <em class="command">ls</em>
+        <em class="attribute">-a</em> /srv</code>
 
       <p>sudo : S'octroyer les permissions super-utilisateur pour une commande (à placer au début de la commande)</p>
       <p>sudo su : S'octroyer les permissions super-utilisateur</p>
-      <code><em class="command">sudo mkdir</em> srv/monSuperDossier</code>
+      <code>
+        <em class="command">sudo mkdir</em> srv/monSuperDossier</code>
 
       <p>rm/rmdir: Supprimer un fichier/dossier</p>
-      <code><em class="command">rm</em> /home/desktop/monNouveauDossier/monFichier</code>
+      <code>
+        <em class="command">rm</em> /home/desktop/monNouveauDossier/monFichier</code>
 
       <p>rm -dir -rf: Supprimer un dossier qui n'est pas vide (ATTENTION)</p>
-      <code><em class="command">rm</em> <em class="attribute">-dir -rf</em> /home/desktop/monNouveauDossier</code>
+      <code>
+        <em class="command">rm</em>
+        <em class="attribute">-dir -rf</em> /home/desktop/monNouveauDossier</code>
 
       <p>man: Ouvrir le manuel d'utilisation du terminal</p>
       <p>--help: Afficher les informations sur une commande</p>
-      <code><em class="command">cd</em> <em class="attribute">--help</em></code>
-
+      <code>
+        <em class="command">cd</em>
+        <em class="attribute">--help</em>
+      </code>
+      
     </section>
+   
   </div>
+  <div class="d-inline-block p-3 text-center text-white bg-secondary mb-3">
+      <span>
+        Si vous voulez continuer dans notre site, vous pouvez lire sur les
+        <a href="database.html">base de données</a> ou sur l'outil de gestion de versions
+        <a href="git.html">Git</a>
+      </span>
+    </div>
   <footer>
     <span>Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
   </footer>

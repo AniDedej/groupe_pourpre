@@ -104,141 +104,128 @@
             <b>MySQL : </b>libre et gratuit, utilisé par le grand publique et pour professionnels.
           </li>
         </ul>
+        Nous utiliserons lors de nos cours le système de gestion de bases de données relationnelles (SGBDR) MySQL. Pour nous familiariser
+      avec ce système, rien de mieux que la pratique !
       </p>
     </article>
 
-    <p>
-      Nous utiliserons lors de nos cours le système de gestion de bases de données relationnelles (SGBDR) MySQL. Pour nous familiariser
-      avec ce système, rien de mieux que la pratique !
-    </p>
-    <br>
   </section>
-  <div class="  contenu--display-flex contenu--justify-start">
+  <div class="contenu--display-flex contenu--justify-start">
     <section class="contenu--right col-12 col-lg-10 ">
       <span>
-        Installer un émulateur de base de données en local, attention, lors de l'installation des différents paquets, il vous sera
+        Pour installer un émulateur de base de données local, lors de l'installation des différents paquets, il vous sera
         demandé d'entrer des mots de passes qui vous permetront par la suite d'accèder à vos bases de données.
       </span>
       <br>
-      <br>
-      <span>Ouvrir un Terminal et entrer les commandes suivantes :</span>
-
-      <p>Installer les paquets Apache 2 nécéssaires à mysql
-        <br>
+      <p>Ouvrir un Terminal et entrer les commandes suivantes :</p>
+      <p>Installer les paquets Apache 2 nécéssaires à mysql</p>
         <code>sudo apt-get install apache2</code>
-      </p>
 
-      <p>Installer les paquets mysql client
-        <br>
+      <p>Installer les paquets mysql client</p>
         <code>sudo apt-get install mysql-client</code>
-      </p>
-
-      <p>Installer les paquets mysql server
-        <br>
+    
+      <p>Installer les paquets mysql server</p>
         <code>sudo apt-get install mysql-server</code>
-      </p>
+      
 
-      <p>Installer les paquets de phpmyadmin
-        <br>
+      <p>Installer les paquets de phpmyadmin </p>
         <code>sudo apt-get install phpmyadmin</code>
-      </p>
+     
 
       <p>
         Une fois ces commandes exécutées, tous les paquets nécéssaires sont maintenant installés et vous pouvez commencer à intéragir
-        avec la BDD
+        avec la BDD.
       </p>
 
-      <p>ici, nous allons vous decrire les commande de base necessaire a connaitre pour pouvoir utiliser MySql.
-        <br> Tout d'abbord connectez-vous à mysql via la commande suivante :
-        <br>
+      <p>Ici, nous allons vous decrire les commande de base necessaire a connaitre pour pouvoir utiliser MySql.
+        Tout d'abord connectez-vous à mysql via la commande suivante : </p>
         <code>mysql -u root -p</code>
-      </p>
-
+    
       <p>
         Il vous sera demandé un mot de passe, c'est celui que vous avez saisi lors de l'installation des paquets précédents, tapez-le
         sur votre clavier et appuyez sur Entrée. Vous êtes maintenant connectés à mysql et pouvez interagir avec vos bases
         de données, voici donc quelques commandes.
       </p>
 
-      <p>Créer une Base de Données
-        <br>
-        <code><em class="command">CREATE DATABASE</em> dbName CHARACTER SET UTF8;</code>
-      </p>
+      <p>Créer une Base de Données </p>
+       
+        <code><em class="command">CREATE DATABASE</em> dbName CHARACTER SET UTF8</code>
 
-      <p>Supprimer une Base de Données
-        <br>
-        <code><em class="command">DROP DATABASE</em> dbName;</code>
-      </p>
+      <p>Supprimer une Base de Données </p>
+        <code><em class="command">DROP DATABASE</em> dbName</code>
 
-      <p>Lister les Bases de Données
-        <br>
-        <code><em class="command">SHOW DATABASES</em>;</code>
-      </p>
+      <p>Lister les Bases de Données</p>
+  
+        <code><em class="command">SHOW DATABASES;</em></code>
+      
 
-      <p>Spécifier la Base de Données avec laquelle interagir
-        <br>
+      <p>Spécifier la Base de Données avec laquelle interagir</p>
         <code><em class="command">USE</em> dbName;</code>
-      </p>
+     
 
-      <p>Créer une Table dans une Base de Données
-        <br>
+      <p>Créer une Table dans une Base de Données </p>
         <code><em class="command">CREATE TABLE</em> tableName;</code>
-      </p>
+     
 
-      <p>Afficher la structure d'une table
-        <br>
+      <p>Afficher la structure d'une table</p>
         <code><em class="command">DESCRIBE</em> tableName;</code>
-      </p>
+      
 
-      <p>Supprimer une Table
-        <br>
+      <p>Supprimer une Table</p>
         <code><em class="command">DROP TABLE</em> tableName;</code>
-      </p>
+      
 
       <p>Renommer une Table
         <br>
-        <code><em class="command">ALTER TABLE</em> tableName <em class="command">RENAME AS</em> newTableName;</code>
+        <code>
+          <em class="command">ALTER TABLE</em> tableName
+          <em class="command">RENAME AS</em> newTableName;</code>
       </p>
-      <p>Vider une Table
-        <br>
+      <p>Vider une Table</p>
+        
         <code><em class="command">TRUNCATE</em> tableName;</code>
-      </p>
+      
 
-      <span>Nous allons maintenant voir comment interagir avec la base de donnée que vous avez creer. Nous allons, pour cela utiliser
+      <p>Nous allons maintenant voir comment interagir avec la base de donnée que vous avez creer. Nous allons, pour cela utiliser
         la commande select qui retourne des enregistrements dans un tableau de résultat. Cette commande peut sélectionner
-        une ou plusieurs colonnes d’une table.</span>
+        une ou plusieurs colonnes d’une table.</p>
 
-      <p>Commande de base:
-        <br>
+      <p>Commande de base:</p>
+        
         <code><em class="command">SELECT</em> nomColonne <em class="command">FROM</em> nomDeTable;</code>
-        <br> La commande
+        <p>La commande</p>
         <code><em class="command">SELECT</em></code> permet de selectionner une entrer de la table, et
         <code><em class="command">FROM</em></code> de stipuler a quelle table elle apartient</p>
 
-      <p>Pour selectionner plusieur colonnes, il suffit de separé le nom des colonne par une virgule:
-        <br>
-        <code><em class="command">SELECT</em> nomColonne , nomColonne2 <em class="command">FROM</em> nomDeTable;</code>
-        <br>
+      <p>Pour selectionner plusieur colonnes, il suffit de separé le nom des colonne par une virgule:</p>
+        
+        <code><em class="command">SELECT</em> nomColonne , nomColonne2<em class="command">FROM</em> nomDeTable;</code>
 
-        <p> Pour selectionner toutes les colonnes, le symbole * sera utiliser:
-          <br>
+        <p> Pour selectionner toutes les colonnes, le symbole * sera utiliser:</p>
           <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable;</code>
-          <br>
 
           <p> Un ordre doit etre respecter dans l'utilisation des comandes, nous allons utiliser une commande qui possede presque
-            toutes celles possible en tant qu'aide memoire:
-            <br>
-            <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable <em class="command">WHERE</em> condition <em class="command"> GROUP BY</em> expression</code>
-          </p>
+            toutes celles possible en tant qu'aide memoire:</p>
+          
+            <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable<em class="command">WHERE</em> condition
+              <em class="command"> GROUP BY</em> expression</code>
 
           <p>La commande WHERE dans une requête SQL permet d’extraire les lignes d’une base de données qui respectent une condition.
             Cela permet d’obtenir uniquement les informations désirées. par exemple, si vous voulez afficher le nombre de
-            personne qui habite Marseille
-            <br>
-            <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable <em class="command">WHERE</em> ville = Marseille </code>
-          </p>
+            personne qui habite Marseille </p>
+          
+            <code><em class="command">SELECT</em> * <em class="command">FROM</em> nomDeTable
+              <em class="command">WHERE</em> ville = Marseille </code>
     </section>
+
   </div>
+  <div class="d-inline-block p-3 text-center text-white bg-secondary mb-3 justify-content-center">
+      <span>
+        Si vous voulez continuer dans notre site, vous pouvez lire sur
+        <strong><a href="git.html">Git</a></strong> un outil de gestion des versions des fichiers, ou sur le système d'exploitation
+        <a href="linux.html">Linux</a>
+      </span>
+    </div>
   <footer>
     <span class="col-12">Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
   </footer>

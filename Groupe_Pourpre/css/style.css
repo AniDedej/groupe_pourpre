@@ -45,6 +45,13 @@ Rose Clair      #F04152
 .navbar {
   padding: 0;
 }
+a{
+  color: #AC2963;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 /*!----- Header -----!*/
 
 header {
