@@ -1,150 +1,145 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <link href="css/reset.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Back-End Git </title>
-    <script src="scripts/jQuery.js"></script>
-  </head>
-  <body>
-    <header class="container--display-flex container--justify-end container--flex-wrap">
-        <nav class="navbar navbar-expand-lg navbar-dark content--align-content flex1">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="http://www.passerelle-numerique.fr/" target="blank">
-                <img class="header__logo" src="css/img/logo.png" alt="Logo SimplonMars">
+                <img class="img-fluid header__logo" src="css/img/logo.png" alt="Logo SimplonMars">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-      data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-      aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-            <div class="menu collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="" href="index.html">ACCUEIL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="linux.html">LINUX</a>
-                </li>
-                <li class="nav-item">
-
-                    <a class="ici" href="git.html">GIT</a>
-
-                </li>
-                <li class="nav-item">
-                    <a class="" href="database.html">BASE DE DONNÉES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="framework.html">FRAMEWORK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="" href="contact.html">CONTACT</a>
-                </li>
+            <div id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item border-bottom">
+                        <i class="fa fa-1x fa-home icons" aria-hidden="true"></i>
+                        <a href="index.html">ACCUEIL</a>
+                    </li>
+                    <li class="nav-item border-bottom">
+                        <i class="fa fa-1x fa-linux icons" aria-hidden="true"></i>
+                        <a href="linux.html">LINUX</a>
+                    </li>
+                    <li class="nav-item border-bottom">
+                        <i class="fa fa-1x fa-git icons" aria-hidden="true"></i>
+                        <a class="ici" href="git.html">GIT</a>
+                    </li>
+                    <li class="nav-item border-bottom">
+                        <i class="fa fa-1x fa-database icons" aria-hidden="true"></i>
+                        <a href="database.html">BASE DE DONNÉES</a>
+                    </li>
+                    <li class="nav-item border-bottom">
+                        <i class="fa fa-1x fa-puzzle-piece icons" aria-hidden="true"></i>
+                        <a href="framework.html">FRAMEWORK</a>
+                    </li>
+                    <li class="nav-item border-bottom">
+                        <i class="fa fa-1x fa-question-circle-o icons" aria-hidden="true"></i>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
                 </ul>
             </div>
+            <div id="titlePage-container"></div>
+            <div id="nav-container">
+                <div class="toggle-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- /toggle-icon -->
+            </div>
+            <!-- /nav-container -->
+            <div id="menu-sidebar">
+                <div id="menu-sidebar-header"></div>
+                <div id="menu-sidebar-body"></div>
+            </div>
+            <div id="menu-overlay"></div>
         </nav>
     </header>
     <section class="intro__text">
-      <i class="fa fa-5x fa-git" aria-hidden="true"></i>
-      <h1>Git</h1>
-      <p>
+        <i class="fa fa-5x fa-git" aria-hidden="true"></i>
+        <h1>Git</h1>
+        <p>
 
-        Git, un outil de gestion des versions de projet décentralisé. C'est un logiciel open source qui facilite le coworking sur un projet en gardant les traces de chaque version et les modifications apportés par les auteurs
+            Git, un outil de gestion des versions de projet décentralisé. C'est un logiciel open source qui facilite le coworking sur
+            un projet en gardant les traces de chaque version et les modifications apportés par les auteurs
 
-      </p>
+        </p>
     </section>
     <div class="container">
-    <div class="row justify-content-center">
+        <div class="row justify-content-center">
+            <section class="col-lg-6 col-md-6 col-sm-12 p-3 ">
+                <section class="contenu--right">
+                    <code>sudo apt-get install git</code>
 
-      <section class="col-lg-6 col-md-6 col-sm-12 p-3 ">
+                    <p>Une fois installé, vous pouvez commencer à interagir avec lui.</p>
 
-      <section class="contenu--right">
-    
+                    <p>Créer un dépot git dans le workspace (à spécifier)</p>
+                    <code>git init {name}</code>
 
-      <code>sudo apt-get install git</code>
+                    <p>Créer un dépot git dans srv (à spécifier)</p>
+                    <code>git init --bare {name}</code>
 
-      <p>Une fois installé, vous pouvez commencer à interagir avec lui.</p>
-
-      <p>Créer un dépot git dans le workspace (à spécifier)</p>
-      <code>git init {name}</code>
-
-      <p>Créer un dépot git dans srv (à spécifier)</p>
-      <code>git init --bare {name}</code>
-
-      <p>Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</p>
-      <code>git status</code>
+                    <p>Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</p>
+                    <code>git status</code>
 
 
 
-      <p>Montre l'historique des versions pour la branche courante</p>
+                    <p>Montre l'historique des versions pour la branche courante</p>
 
-      <p>Placer de nouveaux fichiers sous suivi de version</p>
-      <code>git add</code>
+                    <p>Placer de nouveaux fichiers sous suivi de version</p>
+                    <code>git add</code>
 
-      <p>Envoyer le fichier dans le dépôt git</p>
-      <code>git commit</code>
+                    <p>Envoyer le fichier dans le dépôt git</p>
+                    <code>git commit</code>
 
-      <p>Afficher les logs de l'auteur "Host"</p>
-      <code>git log --author=Host</code>
+                    <p>Afficher les logs de l'auteur "Host"</p>
+                    <code>git log --author=Host</code>
 
-      <p>Passer sur la branche "Master"</p>
-      <code>git checkout master</code>
+                    <p>Passer sur la branche "Master"</p>
+                    <code>git checkout master</code>
 
-      <p>Après un commit permet de nommer notre version en "v1"</p>
-      <code>git tag v1</code>
+                    <p>Après un commit permet de nommer notre version en "v1"</p>
+                    <code>git tag v1</code>
 
-      <p>Supprimer le tag "v1" mais conserve la version</p>
-      <code>git tag -d v1</code>
+                    <p>Supprimer le tag "v1" mais conserve la version</p>
+                    <code>git tag -d v1</code>
 
-      <p>Se connecter au dépôt git </p>
-      <code>git remote add origin /srv/passerelle.git</code>
+                    <p>Se connecter au dépôt git </p>
+                    <code>git remote add origin /srv/passerelle.git</code>
 
-      <p>Afficher les connexions</p>
-      <code>git remote</code>
+                    <p>Afficher les connexions</p>
+                    <code>git remote</code>
 
-      <p>Récupère tout l'historique du dépôt nommé et incorpore les modifications</p>
-      <code>git pull</code>
+                    <p>Récupère tout l'historique du dépôt nommé et incorpore les modifications</p>
+                    <code>git pull</code>
 
-      <p>Envoie tout les commits de la branche locale vers Github</p>
-      <code>git push [alias] [branche]</code>
+                    <p>Envoie tout les commits de la branche locale vers Github</p>
+                    <code>git push [alias] [branche]</code>
 
-      <p>Télécharger un projet et tous son historique de versions</p>
-      <code>git clone [Lien]</code>
+                    <p>Télécharger un projet et tous son historique de versions</p>
+                    <code>git clone [Lien]</code>
 
-      <p>Récupèrer la version "origin" sur la branche "master"</p>
-      <code>git fetch origin master</code>
+                    <p>Récupèrer la version "origin" sur la branche "master"</p>
+                    <code>git fetch origin master</code>
+                </section>
+        </div>
+    </div>
+    <footer>
+        <span>Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-  </div>
-</div>
-  <footer>
-    <span>Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
-  </footer>
-
-  <script type="text/javascript" src="scripts/bootstrap.bundle.js">
-  </script>
+    <script type="text/javascript" src="scripts/scripts.js">
+    </script>
 </body>
+
 </html>

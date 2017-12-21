@@ -42,6 +42,9 @@ Rose Clair      #F04152
 .flex1 {
   flex:1;
 }
+.navbar {
+  padding: 0;
+}
 /*!----- Header -----!*/
 
 header {
@@ -71,14 +74,29 @@ nav ul li a {
   font-size: 20px;
 }
 
-nav ul li a:hover {
+.nav-item {
   color: #FFF;
+  font-family: 'Rubik-Medium';
+  font-size: 30px;
+}
+
+.icons {
+  display: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+nav ul li a:hover {
+  color: rgb(247, 123, 136);
   text-decoration: none;
 }
-nav ul li a.ici {
+.ici {
   color: #F04152;
 }
-nav ul li:after {
+.ici:hover {
+  color: #F04152;
+}
+.border-bottom:after {
   content: '';
   display: block;
   margin: auto;
@@ -263,4 +281,186 @@ footer span {
   color: white;
   text-align: center;
   margin-top: 1%;
+}
+
+#nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1%;
+  z-index: 50;
+}
+
+/*toggle-icon*/
+.toggle-icon {
+  display: none;
+  position: relative;
+  width: 100%;
+  -webkit-transition: margin 600ms;
+  -moz-transition: margin 600ms;
+  transition: margin 600ms;
+  cursor: pointer;
+}
+
+.toggle-icon .bar {
+  display: flex;
+  width: 2.5em;
+  height: 0.1em;
+  margin: 0.8em;
+  border-right: 1.8em solid #fff;
+  border-left: 0.5em solid #d6d6d6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
+  -moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
+  transition-property: transform, margin, border-right-color, box-shadow;
+  -webkit-transition-duration: 600ms;
+  -moz-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+.toggle-icon .bar:nth-of-type(1) {
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    transition: opacity 300ms;
+}
+.toggle-icon .bar:nth-of-type(2) {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+/*pushed*/
+.pushed .toggle-icon {
+}
+
+.pushed .bar:nth-of-type(1) {
+    opacity: 0;
+}
+
+.pushed .bar:nth-of-type(2) {
+    margin-left: 2em;
+    -webkit-transform: rotate(-140deg) translateY(-1.5em);
+    -moz-transform: rotate(-140deg) translateY(-1.5em);
+    -ms-transform: rotate(-140deg) translateY(-1.5em);
+    -o-transform: rotate(-140deg) translateY(-1.5em);
+    transform: rotate(-142deg) translateY(-1.5em);
+    margin-top: -2em;
+}
+
+.pushed .bar:nth-of-type(3) {
+    margin-left: 1.1em;
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    margin-top: 1.1em;
+}
+
+
+.pushed .toggle-icon:hover .bar:nth-of-type(2) {
+  border-right-color: #e9b8b9;
+  box-shadow: 0.4em 0 0.6em 0.1em rgba(205,40,44,0.75);
+}
+.pushed .toggle-icon:hover .bar:nth-of-type(3) {
+  border-right-color: #ddf1da;
+  box-shadow: 0.4em 0 0.6em 0.1em rgba(83,228,68,0.65);
+}
+
+#titlePage-container {
+  display: none;
+}
+
+#menu-overlay {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#menu-sidebar {
+  display: none;
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #212428;
+  z-index: 20;
+  transform: translateX(-100%);
+  transition: transform .2s ease-out;
+}
+
+#menu-sidebar ul {
+  display: block;
+}
+
+#menu-sidebar ul li {
+  margin: 0;
+  text-align: unset;
+  padding-bottom: 2%;
+}
+
+#menu-sidebar-header {
+  background: url(img/mr-backend.png) center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 128px;
+  padding-bottom: 2%;
+  border-bottom: 5px solid #b41746;
+  border-radius: 50%;
+}
+
+#menu-sidebar-body {
+  padding: 3%;
+}
+
+#titlePage-container {
+  flex: 2;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+  #navbarNav, .border-bottom:after {
+    display: none;
+  }
+
+  .toggle-icon, #menu-sidebar, .hamburger-activated #menu-overlay, .icons {
+    display: block;
+  }
+
+  .hamburger-activated #menu-sidebar {
+    transform: translateX(0);
+  }
+
+  #titlePage-container {
+    display: block;
+    flex: 8;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-brand {
+    flex: 1;
+  }
+
+  #nav-container {
+    flex: 1;
+  }
 }
