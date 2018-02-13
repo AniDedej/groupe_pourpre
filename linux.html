@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="css/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Back-End Linux </title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="http://www.passerelle-numerique.fr/" target="blank">
+        <img class="img-fluid header__logo" src="css/img/logo.png" alt="Logo SimplonMars">
+      </a>
+      <div id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item border-bottom">
+            <i class="fa fa-1x fa-home icons" aria-hidden="true"></i>
+            <a href="index.html">ACCUEIL</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <i class="fa fa-1x fa-linux icons" aria-hidden="true"></i>
+            <a class="ici" href="linux.html">LINUX</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <i class="fa fa-1x fa-git icons" aria-hidden="true"></i>
+            <a href="git.html">GIT</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <i class="fa fa-1x fa-database icons" aria-hidden="true"></i>
+            <a href="database.html">BASE DE DONNÉES</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <i class="fa fa-1x fa-puzzle-piece icons" aria-hidden="true"></i>
+            <a href="framework.html">FRAMEWORK</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <i class="fa fa-1x fa-question-circle-o icons" aria-hidden="true"></i>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div id="titlePage-container"></div>
+      <div id="nav-container">
+        <div class="toggle-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- /toggle-icon -->
+      </div>
+      <!-- /nav-container -->
+      <div id="menu-sidebar">
+        <div id="menu-sidebar-header"></div>
+        <div id="menu-sidebar-body"></div>
+      </div>
+      <div id="menu-overlay"></div>
+    </nav>
+  </header>
+  <section class="intro__text container-fluid pb-3 mb-lg-4">
+    <div class="row align-items-center">
+      <i class="fa fa-5x fa-linux ml-lg-4 mt-lg-4 mb-lg-4 large-icons" aria-hidden="true"></i>
+      <h1 class="col-7 col-sm-10 col-md-10 col-lg-10">Linux</h1>
+    </div>
+    <p>
+      Un système d'exploitation est un ensemble de logiciels de base que nous permet d'utiliser un ordinateur. Il est nécessaire,
+      par exemple, pour la communication entre les composants matériels (carte réseau, processeur, etc) et l'utilisation
+      de periferiques (souris et clavier). Linux est un système d'exploitation, au même titre que Windows et MAC OS. Il a
+      été créé en 1991 à partir de la fusion des outils GNU, développés par l'américan Richard Stallman, et le noyau Linux,
+      développé par le finlandais Linus Torvalds.
+      <br>
+      <br>
+      Ce système possède de nombreux avantages: il est stable, multi-utilisateur, gratuit, ouvert et ilimité. Linux possède un
+      grand nombre de distributions ("versions") adaptées au bonheur de tout un chacun. Les versions les plus stables sont
+      les preferés des professionnels (Debian et Red Hat). Les distributions adressés aux novices sont Ubuntu, Fedora et
+      Mandriva. Elles ont la particularité d'intégrer par défault une interface graphique utilisateur (GUI, du anglais graphic
+      user interface) et la procédure d'installation est simplifié. Ces deux caracteristiques ont contribué à la popularisation
+      des distributions Linux. Nous utilisons UBUNTU lors de nos cours et travaux.
+    </p>
+  </section>
+  <div class="contenu--display-flex contenu--justify-start">
+    <section class="contenu--right">
+      <span>Si vous aimez taper des commandes dans un terminal, en voici quelques unes à essayer !</span>
+
+      <p>cd : Naviguer dans l'arborescence système</p>
+      <code>
+        <em class="command">cd</em> /home/desktop/</code>
+
+      <p>mkdir : Créer un dossier.</p>
+      <code>
+        <em class="command">mkdir</em> /home/desktop/monNouveauDossier</code>
+
+      <p>touch/gedit/nano : Editer un fichier texte.</p>
+      <code>
+        <em class="command">touch</em> /home/desktop/monDossier/monFichier</code>
+
+      <p>echo : Remplacer le contenu d'un fichier texte</p>
+      <code>
+        <em class="command">echo</em> /home/desktop/monDossier/monFichier "Hello World"</code>
+
+      <p>echo >> : Rajouter du contenu à un fichier texte</p>
+      <code>
+        <em class="command">echo</em>
+        <em class="attribute">>></em> /home/desktop/monDossier/monFichier "Ligne 2"</code>
+
+      <p>cat : Afficher le contenu d'un fichier texte</p>
+      <code>
+        <em class="command">cat</em> /home/monDossier/monFichier</code>
+
+      <p>mv : Déplacer ou renommer des fichiers ou répertoires.</p>
+      <code>
+        <em class="command">mv</em> /home/desktop/monDossier/monFichier /home/desktop/monNouveauDossier</code>
+
+      <p>cp : Copier Coller des fichiers ou répertoires.</p>
+      <code>
+        <em class="command">cp</em> /home/desktop/monNouveauDossier/monFichier /home/desktop/monDossier</code>
+
+      <p>ls : Afficher les dossiers/fichiers dans le répertoire actuel</p>
+      <code>
+        <em class="command">ls</em> /home/desktop/monNouveauDossier</code>
+
+      <p>ls -a : Afficher les dossier/fichiers cachés dans le répertoire actuel</p>
+      <code>
+        <em class="command">ls</em>
+        <em class="attribute">-a</em> /srv</code>
+
+      <p>sudo : S'octroyer les permissions super-utilisateur pour une commande (à placer au début de la commande)</p>
+      <p>sudo su : S'octroyer les permissions super-utilisateur</p>
+      <code>
+        <em class="command">sudo mkdir</em> srv/monSuperDossier</code>
+
+      <p>rm/rmdir: Supprimer un fichier/dossier</p>
+      <code>
+        <em class="command">rm</em> /home/desktop/monNouveauDossier/monFichier</code>
+
+      <p>rm -dir -rf: Supprimer un dossier qui n'est pas vide (ATTENTION)</p>
+      <code>
+        <em class="command">rm</em>
+        <em class="attribute">-dir -rf</em> /home/desktop/monNouveauDossier</code>
+
+      <p>man: Ouvrir le manuel d'utilisation du terminal</p>
+      <p>--help: Afficher les informations sur une commande</p>
+      <code>
+        <em class="command">cd</em>
+        <em class="attribute">--help</em>
+      </code>
+
+    </section>
+
+  </div>
+  <div class="avant_footer p-3 text-center text-white mt-5">
+    <span>
+      Si vous voulez continuer dans notre site, vous pouvez lire sur les
+      <strong>
+      <a href="database.html">base de données</a></strong> ou sur l'outil de gestion de versions
+      <strong>
+      <a href="git.html">Git</a></strong>
+    </span>
+  </div>
+  <footer>
+    <span>Copyright © 2017 Passerelle Numérique - Tous droits réservés.</span>
+  </footer>
+
+  <script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+
+</html>
